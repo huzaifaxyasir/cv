@@ -1,0 +1,90 @@
+body {
+    background-color: #121212; /* Slightly softer black */
+    color: #eaeaea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
+    max-width: 800px; /* Keeps CV centered and readable */
+    line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ff8c42; /* Warm orange accent */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 26px;
+    border-bottom: 2px solid rgba(255, 140, 66, 0.5);
+    padding-bottom: 6px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Text */
+p, li {
+    color: #dcdcdc;
+    font-size: 15px;
+}
+
+ul {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #ff8c42;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff8c42;
+    transition: width 0.3s;
+    margin-top: 2px;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Strong highlight */
+strong {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* First paragraph styling */
+body p:first-of-type {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Section cards (optional for neat layout) */
+section {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
