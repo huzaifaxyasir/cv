@@ -1,10 +1,11 @@
 body {
-    background-color: #121212; /* Slightly softer black */
+    background-color: #121212; /* Dark background */
     color: #eaeaea;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 40px auto;
-    max-width: 800px; /* Keeps CV centered and readable */
+    max-width: 800px; /* Keeps CV centered */
     line-height: 1.7;
+    text-align: center; /* Center text globally */
 }
 
 /* Headings */
@@ -12,6 +13,12 @@ h1, h2, h3 {
     color: #ff8c42; /* Warm orange accent */
     margin-bottom: 10px;
     font-weight: 600;
+    text-align: center;
+}
+
+/* Add subtle glow to highlight */
+h1, h2 {
+    text-shadow: 0 0 6px rgba(255, 140, 66, 0.4);
 }
 
 h1 {
@@ -29,12 +36,14 @@ h2 {
 h3 {
     font-size: 20px;
     margin-top: 20px;
+    color: #ffa366; /* Slightly lighter for subheadings */
 }
 
 /* Text */
 p, li {
     color: #dcdcdc;
     font-size: 15px;
+    text-align: left; /* Paragraphs & lists align left for readability */
 }
 
 ul {
@@ -73,6 +82,7 @@ strong {
 body p:first-of-type {
     margin-top: 10px;
     font-size: 16px;
+    text-align: center;
 }
 
 /* Smooth transitions */
@@ -80,11 +90,12 @@ body p:first-of-type {
     transition: all 0.2s ease-in-out;
 }
 
-/* Section cards (optional for neat layout) */
+/* Section cards */
 section {
     background: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    max-width: 750px;
 }
